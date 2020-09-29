@@ -248,7 +248,8 @@ Hero Section
   text-align: center;
 }
 .hero-info-container h4 {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
   font-weight: 300;
 }
 .hero-btn {
