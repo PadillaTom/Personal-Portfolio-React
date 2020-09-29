@@ -20,7 +20,7 @@ Variables
   /* Colors */
   --MainColor: #ff7b00;
   --BgColor: #fafafa;
-  --MainGray: #393e41;
+  --MainGray: #262829;
   --CtaColor: #ff101f;
 
   /* grey used for paragraphs */
@@ -160,7 +160,7 @@ Navbar / Sidebar
   cursor: pointer;
 }
 .menu-sidebar-open-btn:hover {
-  color: var(--CtaColor);
+  color: var(--MainColor);
 }
 .navbar-links {
   display: none;
@@ -259,18 +259,19 @@ Hero Section
   left: 50%;
   transform: translateX(-50%);
   font-size: 1rem;
-  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 500;
   color: white;
-  border: 1px solid var(--MainColor);
-  letter-spacing: 1.5px;
+  border: 1.7px solid var(--MainColor);
+  letter-spacing: 2px;
   cursor: pointer;
   transition: var(--transition);
   border-radius: 5px;
   background-color: transparent;
 }
 .hero-btn:hover {
-  background-color: var(--BgColor);
-  color: var(--MainColor);
+  background-color: rgba(255, 255, 255, 0.145);
+  color: white;
 }
 /*
 =============== 

@@ -11,6 +11,9 @@ function App() {
       <Navbar></Navbar>
       {/* Hero Section */}
       <HeroSection></HeroSection>
+      {/* About Section */}
+      {/* Projects Section */}
+      {/* Contact Section */}
     </div>
   );
 }
