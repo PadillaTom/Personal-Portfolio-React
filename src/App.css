@@ -1,0 +1,244 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Peddana&display=swap');
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  /* 
+    :::::Color Palette:::::::
+    Main: #6E9887
+    CTA: #FF101F
+    Bg: #fafafa
+    Grey: #393E41
+    */
+
+  /* Colors */
+  --MainColor: #149964;
+  --BgColor: #fafafa;
+  --MainGray: #393e41;
+  --CtaColor: #ff101f;
+
+  /* grey used for paragraphs */
+  --clr-white: #fff;
+  --ff-primary: 'David Libre', serif;
+  --ff-secondary: 'Peddana', serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.2rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 0.875rem;
+}
+html {
+  background: var(--BgColor);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-3);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* section */
+.section {
+  width: 100vw;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/*
+=============== 
+Navbar / Sidebar
+===============
+*/
+.navbar {
+  width: 100%;
+  background: transparent;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background: transparent;
+}
+.navbar-logo {
+  padding-left: 1rem;
+  color: var(--MainColor);
+  font-size: 2.5rem;
+}
+.menu-sidebar-open-btn {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--MainGray);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.menu-sidebar-open-btn:hover {
+  color: var(--MainColor);
+}
+.navbar-links {
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  background: var(--MainGray);
+  transform: translateX(-100%);
+  transition: var(--transition);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.show-sidebar {
+  transform: translateX(0);
+}
+.sidebar-links {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+.sidebar-links li {
+  padding: 1.6rem 0.7rem;
+}
+.sidebar-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.sidebar-close-btn:hover {
+  color: var(--CtaColor);
+}
+.sidebar-social-icons {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  color: white;
+  font-size: 2rem;
+  transition: var(--transition);
+}
+.sidebar-social-icons > * {
+  cursor: pointer;
+}
+.sidebar-social-icons > *:hover {
+  color: var(--MainColor);
+}
+/*
+=============== 
+Hero
+===============
+*/
+
+/*
+=============== 
+Fonts
+===============
+*/
+
+/*
+=============== 
+Variables
+===============
+*/
