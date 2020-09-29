@@ -133,7 +133,7 @@ Navbar / Sidebar
 ===============
 */
 .navbar {
-  width: 100%;
+  width: 100vw;
   background: transparent;
   position: absolute;
   top: 0;
@@ -144,7 +144,8 @@ Navbar / Sidebar
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  padding: 1.2rem 1rem;
+
   background: transparent;
 }
 .navbar-logo {
@@ -184,17 +185,22 @@ Navbar / Sidebar
 .sidebar-links {
   color: white;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 0.7px;
-  margin-bottom: 10rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -55%);
+  transform: translate(-50%, -60%);
 }
+
 .sidebar-links li {
   padding: 1.6rem 0.7rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.sidebar-links li:hover {
+  color: var(--MainColor);
 }
 .sidebar-close-btn {
   position: absolute;
@@ -219,13 +225,14 @@ Navbar / Sidebar
   width: 60%;
   color: white;
   font-size: 2rem;
-  transition: var(--transition);
 }
 .sidebar-social-icons > * {
   cursor: pointer;
+  transition: var(--transition);
 }
 .sidebar-social-icons > *:hover {
   color: var(--MainColor);
+  transform: scale(1.3);
 }
 /*
 =============== 
