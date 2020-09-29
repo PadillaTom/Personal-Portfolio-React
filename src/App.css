@@ -3,8 +3,7 @@
 Fonts
 ===============
 */
-@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Peddana&display=swap');
-/*
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap'); /*
 =============== 
 Variables
 ===============
@@ -19,15 +18,15 @@ Variables
     */
 
   /* Colors */
-  --MainColor: #149964;
+  --MainColor: #ff7b00;
   --BgColor: #fafafa;
   --MainGray: #393e41;
   --CtaColor: #ff101f;
 
   /* grey used for paragraphs */
   --clr-white: #fff;
-  --ff-primary: 'David Libre', serif;
-  --ff-secondary: 'Peddana', serif;
+  --MainFont: 'Open Sans', sans-serif;
+  --SecondaryFont: ;
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
   --radius: 0.25rem;
@@ -66,10 +65,9 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
+  line-height: 1.2;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
+  font-family: var(--MainFont);
 }
 h1 {
   font-size: 3rem;
@@ -137,6 +135,10 @@ Navbar / Sidebar
 .navbar {
   width: 100%;
   background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .navbar-container {
   display: flex;
@@ -147,18 +149,18 @@ Navbar / Sidebar
 }
 .navbar-logo {
   padding-left: 1rem;
-  color: var(--MainColor);
-  font-size: 2.5rem;
+  color: white;
+  font-size: 1.5rem;
 }
 .menu-sidebar-open-btn {
   margin-right: 1rem;
-  font-size: 1.5rem;
-  color: var(--MainGray);
+  font-size: 1.7rem;
+  color: white;
   transition: var(--transition);
   cursor: pointer;
 }
 .menu-sidebar-open-btn:hover {
-  color: var(--MainColor);
+  color: var(--CtaColor);
 }
 .navbar-links {
   display: none;
@@ -227,10 +229,48 @@ Navbar / Sidebar
 }
 /*
 =============== 
-Hero
+Hero Section
 ===============
 */
-
+.hero-container {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./images/lamps.jpg') center/cover fixed no-repeat;
+}
+.hero-info-container {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.hero-info-container h4 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.hero-btn {
+  padding: 0.7rem 3rem;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: 1px solid var(--MainColor);
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 5px;
+  background-color: transparent;
+}
+.hero-btn:hover {
+  background-color: var(--BgColor);
+  color: var(--MainColor);
+}
 /*
 =============== 
 Fonts
