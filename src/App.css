@@ -490,6 +490,7 @@ Projects
   box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.378);
   background: #fc7f2cf3;
   overflow: hidden;
+  border: 1px solid var(--MainColor);
 }
 .single-project-container img {
   width: 100%;
