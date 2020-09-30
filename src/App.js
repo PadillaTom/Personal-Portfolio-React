@@ -3,18 +3,29 @@ import './App.css';
 // Components:
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import ContactSection from './components/ContactSection';
+import FooterSection from './components/FooterSection';
 
 function App() {
   return (
-    <div className='App'>
-      {/* <Navbar Section */}
-      <Navbar></Navbar>
-      {/* Hero Section */}
-      <HeroSection></HeroSection>
-      {/* About Section */}
-      {/* Projects Section */}
-      {/* Contact Section */}
-    </div>
+    <React.Fragment>
+      <div className='App'>
+        {/* <Navbar Section */}
+        <Navbar></Navbar>
+        {/* Hero Section */}
+        <HeroSection></HeroSection>
+        <div className='section-division'></div>
+
+        {/* About Section */}
+        <AboutSection></AboutSection>
+        {/* Projects Section */}
+        {/* Contact Section */}
+        <ContactSection></ContactSection>
+        {/* Footer Section */}
+        <FooterSection></FooterSection>
+      </div>
+    </React.Fragment>
   );
 }
 
