@@ -49,7 +49,11 @@ const ContactSection = ({ contactRef, contactRefDesk }) => {
                 </a>
               </div>
               {/* End Mobile */}
-              <form className='contact-form'>
+              <form
+                action='https://formspree.io/f/mleodora'
+                method='POST'
+                className='contact-form'
+              >
                 <input type='text' name='person' placeholder='Name' />
                 <input type='email' name='email' placeholder='Enter email' />
                 <textarea
@@ -57,7 +61,9 @@ const ContactSection = ({ contactRef, contactRefDesk }) => {
                   rows='8'
                   placeholder='Your Message'
                 ></textarea>
-                <button type='submit'>Submit</button>
+                <button type='submit' value='Send'>
+                  Submit
+                </button>
               </form>
             </div>
           </div>
