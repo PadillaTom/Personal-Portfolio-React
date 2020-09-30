@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       <section className='projects-section'>
         <div className='projects-container'>
           <div className='contact-title-container'>
-            <h2 className='contact-title'>Projects</h2>
+            <h2 className='projects-title'>Projects</h2>
           </div>
           <div className='single-projects-container'>
             {/* Single Project */}
