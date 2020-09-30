@@ -11,12 +11,9 @@ function App() {
   return (
     <React.Fragment>
       <div className='App'>
-        {/* <Navbar Section */}
-        <Navbar></Navbar>
         {/* Hero Section */}
         <HeroSection></HeroSection>
         <div className='section-division'></div>
-
         {/* About Section */}
         <AboutSection></AboutSection>
         {/* Projects Section */}
