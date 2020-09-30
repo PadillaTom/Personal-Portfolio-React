@@ -50,6 +50,7 @@ body {
 }
 html {
   background: var(--BgColor);
+  scroll-behavior: smooth;
 }
 ul {
   list-style-type: none;
