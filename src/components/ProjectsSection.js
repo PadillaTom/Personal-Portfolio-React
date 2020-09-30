@@ -23,12 +23,8 @@ const ProjectsSection = () => {
                   <p>HTML / CSS / JS</p>
                 </div>
                 <div className='project-icons-container'>
-                  <a href='#'>
-                    <HiOutlineExternalLink></HiOutlineExternalLink>
-                  </a>
-                  <a href='https://github.com/PadillaTom'>
-                    <FiGithub></FiGithub>
-                  </a>
+                  <HiOutlineExternalLink></HiOutlineExternalLink>
+                  <FiGithub></FiGithub>
                 </div>
               </div>
             </div>
@@ -42,12 +38,8 @@ const ProjectsSection = () => {
                   <p>HTML / CSS / JS</p>
                 </div>
                 <div className='project-icons-container'>
-                  <a href='#'>
-                    <HiOutlineExternalLink></HiOutlineExternalLink>
-                  </a>
-                  <a href='https://github.com/PadillaTom'>
-                    <FiGithub></FiGithub>
-                  </a>
+                  <HiOutlineExternalLink></HiOutlineExternalLink>
+                  <FiGithub></FiGithub>
                 </div>
               </div>
             </div>
@@ -61,12 +53,8 @@ const ProjectsSection = () => {
                   <p>HTML / CSS / JS</p>
                 </div>
                 <div className='project-icons-container'>
-                  <a href='#'>
-                    <HiOutlineExternalLink></HiOutlineExternalLink>
-                  </a>
-                  <a href='https://github.com/PadillaTom'>
-                    <FiGithub></FiGithub>
-                  </a>
+                  <HiOutlineExternalLink></HiOutlineExternalLink>
+                  <FiGithub></FiGithub>
                 </div>
               </div>
             </div>
@@ -80,12 +68,8 @@ const ProjectsSection = () => {
                   <p>HTML / CSS / JS</p>
                 </div>
                 <div className='project-icons-container'>
-                  <a href='#'>
-                    <HiOutlineExternalLink></HiOutlineExternalLink>
-                  </a>
-                  <a href='https://github.com/PadillaTom'>
-                    <FiGithub></FiGithub>
-                  </a>
+                  <HiOutlineExternalLink></HiOutlineExternalLink>
+                  <FiGithub></FiGithub>
                 </div>
               </div>
             </div>
