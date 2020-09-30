@@ -24,8 +24,10 @@ function App() {
       <div className='App'>
         {/* Navbar Section */}
         <Navbar></Navbar>
+
         {/* Hero Section */}
         <HeroSection executeScrollProj={executeScrollProj}></HeroSection>
+
         <div className='section-division'></div>
         {/* About Section */}
         <AboutSection
