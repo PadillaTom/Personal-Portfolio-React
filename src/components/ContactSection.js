@@ -13,39 +13,53 @@ const ContactSection = ({ contactRef }) => {
             <h2 className='contact-title'>Contact</h2>
             <h6 className='contact-subtitle'>Form, Social Media, Telephone.</h6>
           </div>
-          <div className='contact-written-info-container'>
-            <div className='contact-written-info'>
-              <div className='contact-written-icon'>
-                <AiFillPhone></AiFillPhone>
+          <div className='desktop-contact-container'>
+            <div className='contact-written-info-container'>
+              <div className='contact-written-info'>
+                <div className='contact-written-icon'>
+                  <AiFillPhone></AiFillPhone>
+                </div>
+                <p> +41 79 400 26 93</p>
               </div>
-              <p> +41 79 400 26 93</p>
-            </div>
-            <div className='contact-written-info'>
-              <div className='contact-written-icon'>
-                <SiGmail></SiGmail>
+              <div className='contact-written-info'>
+                <div className='contact-written-icon'>
+                  <SiGmail></SiGmail>
+                </div>
+                <p>PadillaTomasAgustin@gmail.com</p>
+                {/* Only Will Display in Desktop Sizes */}
+                <div className='contact-social-media-desktop-container'>
+                  <a href='https://www.linkedin.com/in/padillatom/'>
+                    <ImLinkedin2></ImLinkedin2>
+                  </a>
+                  <a href='https://github.com/PadillaTom'>
+                    <FiGithub></FiGithub>
+                  </a>
+                </div>
+                {/* End Desktop */}
               </div>
-              <p>PadillaTomasAgustin@gmail.com</p>
             </div>
-          </div>
-          <div className='contact-methods-container'>
-            <div className='contact-social-media-container'>
-              <a href='https://www.linkedin.com/in/padillatom/'>
-                <ImLinkedin2></ImLinkedin2>
-              </a>
-              <a href='https://github.com/PadillaTom'>
-                <FiGithub></FiGithub>
-              </a>
+            <div className='contact-methods-container'>
+              {/* Only Will display in Mobile */}
+              <div className='contact-social-media-container'>
+                <a href='https://www.linkedin.com/in/padillatom/'>
+                  <ImLinkedin2></ImLinkedin2>
+                </a>
+                <a href='https://github.com/PadillaTom'>
+                  <FiGithub></FiGithub>
+                </a>
+              </div>
+              {/* End Mobile */}
+              <form className='contact-form'>
+                <input type='text' name='person' placeholder='Name' />
+                <input type='email' name='email' placeholder='Enter email' />
+                <textarea
+                  name='message'
+                  rows='8'
+                  placeholder='Your Message'
+                ></textarea>
+                <button type='submit'>Submit</button>
+              </form>
             </div>
-            <form className='contact-form'>
-              <input type='text' name='person' placeholder='Name' />
-              <input type='email' name='email' placeholder='Enter email' />
-              <textarea
-                name='message'
-                rows='8'
-                placeholder='Your Message'
-              ></textarea>
-              <button type='submit'>Submit</button>
-            </form>
           </div>
         </div>
       </section>

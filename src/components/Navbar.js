@@ -13,6 +13,10 @@ const Navbar = ({
   executeScrollCont,
   executeScrollAbout,
   executeScrollHome,
+  executeScrollProjMinus,
+  executeScrollContMinus,
+  executeScrollAboutMinus,
+  executeScrollHomeMinus,
 }) => {
   //State
   const [isOpen, setIsOpen] = useState(false);
@@ -25,10 +29,10 @@ const Navbar = ({
         </div>
         {/* Navbar Desktop */}
         <ul className='navbar-links'>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li onClick={executeScrollHomeMinus}>Home</li>
+          <li onClick={executeScrollAboutMinus}>About</li>
+          <li onClick={executeScrollProjMinus}>Projects</li>
+          <li onClick={executeScrollContMinus}>Contact</li>
         </ul>
         <aside className={`sidebar ${isOpen ? 'show-sidebar' : ''}`}>
           <div className='sidebar-close-btn'>

@@ -10,6 +10,7 @@ import ProjectsSection from './components/ProjectsSection';
 
 // Scroll :
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+const scrollToRefNav = (ref) => window.scrollTo(0, ref.current.offsetTop - 63);
 // General scroll to element function
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
   const executeScrollCont = () => scrollToRef(contactRef);
   const executeScrollAbout = () => scrollToRef(aboutRef);
   const executeScrollHome = () => scrollToRef(homeRef);
+  const executeScrollProjMinus = () => scrollToRefNav(projRef);
+  const executeScrollContMinus = () => scrollToRefNav(contactRef);
+  const executeScrollAboutMinus = () => scrollToRefNav(aboutRef);
+  const executeScrollHomeMinus = () => scrollToRefNav(homeRef);
 
   return (
     <React.Fragment>
@@ -32,6 +37,10 @@ function App() {
           executeScrollCont={executeScrollCont}
           executeScrollAbout={executeScrollAbout}
           executeScrollHome={executeScrollHome}
+          executeScrollProjMinus={executeScrollProjMinus}
+          executeScrollContMinus={executeScrollContMinus}
+          executeScrollAboutMinus={executeScrollAboutMinus}
+          executeScrollHomeMinus={executeScrollHomeMinus}
         ></Navbar>
 
         {/* Hero Section */}
