@@ -133,7 +133,7 @@ p {
   );
 }
 /*
-====#944800==== 
+=============== 
 Navbar / Sidebar
 ===============
 */
@@ -156,13 +156,19 @@ Navbar / Sidebar
   padding-left: 1rem;
   color: white;
   font-size: 1.5rem;
+  display: none;
 }
+
 .menu-sidebar-open-btn {
   margin-right: 1rem;
-  font-size: 1.7rem;
+  font-size: 3rem;
   color: white;
   transition: var(--transition);
   cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 2;
 }
 .menu-sidebar-open-btn:hover {
   color: var(--MainColor);
@@ -172,7 +178,7 @@ Navbar / Sidebar
 }
 
 /* Sidebar */
-/* .sidebar {
+.sidebar {
   height: 100%;
   width: 100vw;
   z-index: 10;
@@ -237,7 +243,7 @@ Navbar / Sidebar
 .sidebar-social-icons > *:hover {
   color: var(--MainColor);
   transform: scale(1.3);
-} */
+}
 /*
 
 /*
@@ -376,12 +382,12 @@ Projects
 }
 .single-project-container {
   width: 20rem;
-  height: 12rem;
+  height: 13rem;
   text-align: center;
   position: relative;
   margin: 1.2rem auto;
-  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.207);
-  background: var(--MainGray);
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.378);
+  background: #444444;
   overflow: hidden;
 }
 
@@ -390,6 +396,7 @@ Projects
   min-height: 100%;
   transition: var(--transition);
   display: block;
+  object-fit: cover;
 }
 .project-info-container {
   position: absolute;
@@ -403,9 +410,9 @@ Projects
   margin-bottom: 5rem;
 }
 .project-text-container h3 {
-  color: var(--MainColor);
+  color: white;
   margin-bottom: 0.2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .project-text-container p {
   color: white;
@@ -427,8 +434,8 @@ Projects
   color: var(--MainColor);
 }
 .single-project-container:hover img {
-  opacity: 0.5;
-  transform: scale(1.2);
+  opacity: 0.2;
+  transform: scale(1.05);
 }
 .single-project-container:hover .project-info-container,
 .single-project-container:hover .project-icons-container {

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './App.css';
 // Components:
-// import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
@@ -22,6 +22,8 @@ function App() {
   return (
     <React.Fragment>
       <div className='App'>
+        {/* Navbar Section */}
+        <Navbar></Navbar>
         {/* Hero Section */}
         <HeroSection executeScrollProj={executeScrollProj}></HeroSection>
         <div className='section-division'></div>
