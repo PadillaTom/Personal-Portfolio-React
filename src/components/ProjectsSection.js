@@ -8,11 +8,11 @@ import PeruvianChef from '../images/PeruvianChef.jpg';
 import { FiGithub } from 'react-icons/fi';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 
-const ProjectsSection = ({ projRef }) => {
+const ProjectsSection = ({ projRef, projRefDesk }) => {
   return (
     <React.Fragment>
       <section className='projects-section' id='projects' ref={projRef}>
-        <div className='projects-container'>
+        <div className='projects-container' ref={projRefDesk}>
           <div className='contact-title-container'>
             <h2 className='projects-title'>Projects</h2>
           </div>

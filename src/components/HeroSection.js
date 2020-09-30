@@ -1,6 +1,10 @@
 import React from 'react';
 
-const HeroSection = ({ executeScrollProj, homeRef }) => {
+const HeroSection = ({
+  executeScrollProj,
+  homeRef,
+  executeScrollProjDesktop,
+}) => {
   return (
     <React.Fragment>
       <section className='section' ref={homeRef}>
@@ -11,6 +15,12 @@ const HeroSection = ({ executeScrollProj, homeRef }) => {
             <h4>I am a Front-End Web Developer.</h4>
           </div>
           <button onClick={executeScrollProj} className='hero-btn'>
+            Works
+          </button>
+          <button
+            onClick={executeScrollProjDesktop}
+            className='hero-btn-desktop'
+          >
             Works
           </button>
         </div>

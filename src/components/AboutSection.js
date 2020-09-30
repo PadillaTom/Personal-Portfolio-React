@@ -1,7 +1,13 @@
 import React from 'react';
 import sculpt1 from '../images/sculpt1.png';
 
-const AboutSection = ({ executeScrollProj, executeScrollCont, aboutRef }) => {
+const AboutSection = ({
+  executeScrollProj,
+  executeScrollCont,
+  aboutRef,
+  executeScrollContDesktop,
+  executeScrollProjDesktop,
+}) => {
   return (
     <React.Fragment>
       <section className='about-section' id='about' ref={aboutRef}>
@@ -24,8 +30,21 @@ const AboutSection = ({ executeScrollProj, executeScrollCont, aboutRef }) => {
                 <span onClick={executeScrollProj}> Projects</span>.
               </p>
             </div>
+            <div className='about-info-projects-invite-desktop'>
+              <p>
+                I invite you to see my
+                <span onClick={executeScrollProjDesktop}> Projects</span>.
+              </p>
+            </div>
 
             <button className='about-btn' onClick={executeScrollCont}>
+              Let's get in touch
+            </button>
+            <button
+              className='about-btn-desktop'
+              onClick={executeScrollContDesktop}
+            >
+              {' '}
               Let's get in touch
             </button>
           </div>

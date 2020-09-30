@@ -317,6 +317,37 @@ Hero Section
   background-color: rgba(255, 255, 255, 0.145);
   color: white;
 }
+.hero-btn-desktop {
+  display: none;
+}
+@media screen and (min-width: 780px) {
+  .hero-btn {
+    display: none;
+  }
+  .hero-btn-desktop {
+    display: inline-block;
+    padding: 0.7rem 3rem;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    border: 1.7px solid var(--MainColor);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  .hero-btn-desktop:hover {
+    background-color: rgba(255, 255, 255, 0.145);
+    color: white;
+  }
+}
+
 /*
 =============== 
 About Section
@@ -379,6 +410,12 @@ About Section
   background-color: var(--MainColor);
   color: white;
 }
+.about-info-projects-invite-desktop {
+  display: none;
+}
+.about-btn-desktop {
+  display: none;
+}
 @media screen and (min-width: 780px) {
   .about-section {
     padding: 4rem;
@@ -387,7 +424,38 @@ About Section
     font-size: 1.4rem;
     line-height: 1.7rem;
   }
+
+  .about-btn {
+    display: none;
+  }
+  .about-btn-desktop {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border: 2px solid var(--MainColor);
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 5px;
+    background-color: transparent;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: var(--MainColor);
+    text-transform: uppercase;
+  }
+  .about-btn-desktop:hover {
+    background-color: var(--MainColor);
+    color: white;
+  }
+  .about-info-projects-invite {
+    display: none;
+  }
+  .about-info-projects-invite-desktop {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
 }
+
 /*
 =============== 
 Projects
@@ -420,7 +488,7 @@ Projects
   position: relative;
   margin: 1.2rem auto;
   box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.378);
-  background: #ffa281;
+  background: #fc7f2cf3;
   overflow: hidden;
 }
 .single-project-container img {
