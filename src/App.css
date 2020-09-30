@@ -239,8 +239,6 @@ Navbar / Sidebar
 } */
 /*
 
-
-
 /*
 =============== 
 Hero Section
@@ -353,6 +351,65 @@ About Section
 Projects
 ===============
 */
+.projects-section {
+  width: 100vw;
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./images/windows.jpg') center/cover fixed no-repeat;
+}
+.projects-container {
+  width: 90vw;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+.single-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.single-project-container {
+  width: 20rem;
+  height: 12rem;
+  text-align: center;
+  position: relative;
+  margin: 1.2rem auto;
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.542);
+}
+.single-project-container img {
+  width: 100%;
+  height: 100%;
+}
+.project-info-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.project-text-container {
+  margin-bottom: 5rem;
+}
+.project-text-container h3 {
+  color: var(--MainColor);
+  margin-bottom: 0.2rem;
+  font-size: 2rem;
+}
+.project-text-container p {
+  color: var(--MainGray);
+  font-size: 0.7rem;
+}
+.project-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+.project-icons-container > a * {
+  color: white;
+}
+.project-icons-container > a *:hover {
+  color: var(--MainColor);
+}
 
 /*
 =============== 

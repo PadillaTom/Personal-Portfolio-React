@@ -2,7 +2,6 @@ import React from 'react';
 import { ImLinkedin2 } from 'react-icons/im';
 import { FiGithub } from 'react-icons/fi';
 import { SiGmail } from 'react-icons/si';
-
 import { AiFillPhone } from 'react-icons/ai';
 
 const ContactSection = () => {
