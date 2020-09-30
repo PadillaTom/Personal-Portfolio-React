@@ -407,14 +407,14 @@ Contact
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
 }
 .contact-form input {
   background: #262829e0;
   border: none;
   outline: none;
   color: white;
-  padding: 0.3rem;
+  padding: 0.5rem 0;
   margin-bottom: 3px;
   border-radius: 0.4rem;
 }
@@ -433,6 +433,7 @@ Contact
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
   resize: none;
+  padding-top: 0.5rem;
 }
 .contact-form textarea::placeholder {
   color: rgba(255, 255, 255, 0.631);
