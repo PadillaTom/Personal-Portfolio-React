@@ -1,10 +1,10 @@
 import React from 'react';
 import sculpt1 from '../images/sculpt1.png';
 
-const AboutSection = ({ executeScrollProj, executeScrollCont }) => {
+const AboutSection = ({ executeScrollProj, executeScrollCont, aboutRef }) => {
   return (
     <React.Fragment>
-      <section className='about-section' id='about'>
+      <section className='about-section' id='about' ref={aboutRef}>
         <div className='about-container'>
           <div className='about-img-container'>
             <img src={sculpt1} alt='About-img' />

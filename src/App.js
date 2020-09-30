@@ -16,22 +16,36 @@ function App() {
   // Scroll:
   const projRef = useRef(null);
   const contactRef = useRef(null);
+  const aboutRef = useRef(null);
+  const homeRef = useRef(null);
   const executeScrollProj = () => scrollToRef(projRef);
   const executeScrollCont = () => scrollToRef(contactRef);
+  const executeScrollAbout = () => scrollToRef(aboutRef);
+  const executeScrollHome = () => scrollToRef(homeRef);
 
   return (
     <React.Fragment>
       <div className='App'>
         {/* Navbar Section */}
-        <Navbar></Navbar>
+        <Navbar
+          executeScrollProj={executeScrollProj}
+          executeScrollCont={executeScrollCont}
+          executeScrollAbout={executeScrollAbout}
+          executeScrollHome={executeScrollHome}
+        ></Navbar>
 
         {/* Hero Section */}
-        <HeroSection executeScrollProj={executeScrollProj}></HeroSection>
+        <HeroSection
+          executeScrollProj={executeScrollProj}
+          homeRef={homeRef}
+          aboutRef={aboutRef}
+        ></HeroSection>
 
         <div className='section-division'></div>
         {/* About Section */}
         <AboutSection
           projRef={projRef}
+          aboutRef={aboutRef}
           executeScrollProj={executeScrollProj}
           executeScrollCont={executeScrollCont}
         ></AboutSection>

@@ -5,12 +5,15 @@ import { AiOutlineMenu } from 'react-icons/ai';
 // Sidebar Icons:
 import { ImLinkedin2 } from 'react-icons/im';
 import { FiGithub } from 'react-icons/fi';
-import { SiGmail } from 'react-icons/si';
-import { MdPhoneIphone } from 'react-icons/md';
 import { AiOutlineClose } from 'react-icons/ai';
 
 // Main:
-const Navbar = () => {
+const Navbar = ({
+  executeScrollProj,
+  executeScrollCont,
+  executeScrollAbout,
+  executeScrollHome,
+}) => {
   //State
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -31,25 +34,19 @@ const Navbar = () => {
           <div className='sidebar-close-btn'>
             <AiOutlineClose onClick={() => setIsOpen(!isOpen)}></AiOutlineClose>
           </div>
-          <ul className='sidebar-links'>
-            <li>
-              <a href='/'> Home</a>
-            </li>
-            <li>
-              <a href='/'> About </a>
-            </li>
-            <li>
-              <a href='/'> Projects </a>
-            </li>
-            <li>
-              <a href='/'> Contact </a>
-            </li>
+          <ul className='sidebar-links' onClick={() => setIsOpen(!isOpen)}>
+            <li onClick={executeScrollHome}>Home</li>
+            <li onClick={executeScrollAbout}>About</li>
+            <li onClick={executeScrollProj}>Projects</li>
+            <li onClick={executeScrollCont}>Contact</li>
           </ul>
           <div className='sidebar-social-icons'>
-            <ImLinkedin2></ImLinkedin2>
-            <FiGithub></FiGithub>
-            <SiGmail></SiGmail>
-            <MdPhoneIphone></MdPhoneIphone>
+            <a href='https://www.linkedin.com/in/padillatom/'>
+              <ImLinkedin2></ImLinkedin2>
+            </a>
+            <a href='https://github.com/PadillaTom'>
+              <FiGithub></FiGithub>
+            </a>
           </div>
         </aside>
       </div>

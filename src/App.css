@@ -203,7 +203,6 @@ Navbar / Sidebar
   left: 50%;
   transform: translate(-50%, -60%);
 }
-
 .sidebar-links li {
   padding: 1.6rem 0.7rem;
   transition: var(--transition);
@@ -230,7 +229,7 @@ Navbar / Sidebar
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 60%;
   color: white;

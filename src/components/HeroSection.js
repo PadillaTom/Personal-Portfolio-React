@@ -1,9 +1,9 @@
 import React from 'react';
 
-const HeroSection = ({ executeScrollProj }) => {
+const HeroSection = ({ executeScrollProj, homeRef }) => {
   return (
     <React.Fragment>
-      <section className='section'>
+      <section className='section' ref={homeRef}>
         <div className='hero-container'>
           <div className='hero-info-container'>
             <h4>Hi, my name is </h4>
