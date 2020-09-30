@@ -172,13 +172,13 @@ Navbar / Sidebar
 
 /* Sidebar */
 .sidebar {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  z-index: 1;
+  z-index: 10;
   background: var(--MainGray);
   transform: translateX(-100%);
   transition: var(--transition);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -208,8 +208,8 @@ Navbar / Sidebar
 .sidebar-close-btn {
   position: absolute;
   top: 1rem;
-  right: 0.5rem;
-  font-size: 2.5rem;
+  right: 1rem;
+  font-size: 3rem;
   color: white;
   cursor: pointer;
   transition: var(--transition);
@@ -372,13 +372,14 @@ Contact
 .contact-subtitle {
   color: #262829;
   letter-spacing: 1px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 0.8rem;
 }
 .contact-written-info-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 2rem;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.7rem;
 }
 .contact-written-info {
   display: flex;
@@ -388,11 +389,13 @@ Contact
 }
 .contact-written-info p {
   padding-top: 0.5rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 400;
   letter-spacing: 0.3px;
 }
 .contact-written-icon {
   color: var(--MainColor);
+  font-size: 1.3rem;
 }
 .contact-methods-container {
   display: flex;

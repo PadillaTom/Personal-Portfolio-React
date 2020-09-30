@@ -4,7 +4,7 @@ import sculpt1 from '../images/sculpt1.png';
 const AboutSection = () => {
   return (
     <React.Fragment>
-      <section className='about-section'>
+      <section className='about-section' id='about'>
         <div className='about-container'>
           <div className='about-img-container'>
             <img src={sculpt1} alt='About-img' />
