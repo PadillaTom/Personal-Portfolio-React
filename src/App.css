@@ -326,9 +326,9 @@ About Section
   margin: 0 auto;
   max-width: 75%;
 }
-.about-info a {
+.about-info span {
   color: var(--MainColor);
-  text-transform: uppercase;
+  cursor: pointer;
 }
 .about-btn {
   margin-top: 2rem;
@@ -340,9 +340,11 @@ About Section
   background-color: transparent;
   letter-spacing: 2px;
   font-weight: bold;
+  color: var(--MainColor);
+  text-transform: uppercase;
 }
 .about-btn:hover {
-  background-color: rgba(255, 255, 255, 0.145);
+  background-color: var(--MainColor);
   color: white;
 }
 
@@ -580,14 +582,14 @@ Footer
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-bottom: 2rem;
   padding-top: 1rem;
 }
 .footer-social-icons > * {
   color: white;
-  font-size: 1.5rem;
-  margin: 0 1rem;
+  font-size: 1.3rem;
+  margin: 0 0.2rem;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -598,11 +600,18 @@ Footer
 .footer-info {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-around;
   color: white;
   letter-spacing: 2.5px;
   font-weight: 300;
 }
-.footer-info span {
-  color: var(--MainColor) s;
+.footer-info p {
+  font-size: 1rem;
+}
+.footer-info h6 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  margin-top: 0.4rem;
 }

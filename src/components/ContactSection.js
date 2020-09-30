@@ -4,10 +4,10 @@ import { FiGithub } from 'react-icons/fi';
 import { SiGmail } from 'react-icons/si';
 import { AiFillPhone } from 'react-icons/ai';
 
-const ContactSection = () => {
+const ContactSection = ({ contactRef }) => {
   return (
     <React.Fragment>
-      <section className='contact-section' id='contact'>
+      <section className='contact-section' id='contact' ref={contactRef}>
         <div className='contact-section-container'>
           <div className='contact-title-container'>
             <h2 className='contact-title'>Contact</h2>
@@ -23,7 +23,7 @@ const ContactSection = () => {
             <div className='contact-written-info'>
               <div className='contact-written-icon'>
                 <SiGmail></SiGmail>
-              </div>{' '}
+              </div>
               <p>PadillaTomasAgustin@gmail.com</p>
             </div>
           </div>

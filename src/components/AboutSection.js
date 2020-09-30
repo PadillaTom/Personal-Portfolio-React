@@ -1,7 +1,7 @@
 import React from 'react';
 import sculpt1 from '../images/sculpt1.png';
 
-const AboutSection = () => {
+const AboutSection = ({ executeScrollProj, executeScrollCont }) => {
   return (
     <React.Fragment>
       <section className='about-section' id='about'>
@@ -14,19 +14,19 @@ const AboutSection = () => {
           </div>
           <div className='about-info'>
             <p>
-              With an artistic background, I have started my studies as a
-              <span>Web Developer</span> to find a real passion.
+              With an artistic background, I have started my studies as a Web
+              Developer to find a real passion.
             </p>
             <br></br>
             <div className='about-info-projects-invite'>
               <p>
                 I invite you to see my
-                <a href='#projects'> Projects</a>.
+                <span onClick={executeScrollProj}> Projects</span>.
               </p>
             </div>
 
-            <button className='about-btn'>
-              <a href='#contact'>Let's get in touch</a>
+            <button className='about-btn' onClick={executeScrollCont}>
+              Let's get in touch
             </button>
           </div>
         </div>

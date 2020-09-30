@@ -1,8 +1,6 @@
 import React from 'react';
 import { ImLinkedin2 } from 'react-icons/im';
 import { FiGithub } from 'react-icons/fi';
-import { SiGmail } from 'react-icons/si';
-import { MdPhoneIphone } from 'react-icons/md';
 import { AiOutlineCopyright } from 'react-icons/ai';
 
 const FooterSection = () => {
@@ -16,13 +14,13 @@ const FooterSection = () => {
           <a href='https://github.com/PadillaTom'>
             <FiGithub></FiGithub>
           </a>
-          <SiGmail></SiGmail>
-          <MdPhoneIphone></MdPhoneIphone>
         </div>
         <div className='footer-info'>
           <p>
             Tomas Padilla <AiOutlineCopyright></AiOutlineCopyright> 2020
           </p>
+          <h6>+41 79 400 26 93</h6>
+          <h6>PadillaTomasAgustin@gmail.com</h6>
         </div>
       </div>
     </footer>
