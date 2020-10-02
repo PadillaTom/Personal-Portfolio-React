@@ -61,7 +61,7 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
               <div className='project-info-container'>
                 <div className='project-text-container'>
                   <h3>Flix Tribute</h3>
-                  <p>React Js</p>
+                  <p>React Js / TMDB API</p>
                 </div>
                 <div className='project-icons-container'>
                   <a href='https://flix-tribute-react.netlify.app'>
@@ -80,7 +80,7 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
               <div className='project-info-container'>
                 <div className='project-text-container'>
                   <h3>Air Tribute</h3>
-                  <p>React Js</p>
+                  <p>React Js / React Router Dom</p>
                 </div>
                 <div className='project-icons-container'>
                   <a href='https://bnb-tribute-react.netlify.app'>

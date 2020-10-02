@@ -10,10 +10,10 @@ import ProjectsSection from './components/ProjectsSection';
 
 // Scroll :
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-const scrollToRefDesk = (ref) => window.scrollTo(0, ref.current.offsetTop - 63);
+const scrollToRefDesk = (ref) => window.scrollTo(0, ref.current.offsetTop - 73);
 const scrollToRefDesk2 = (ref) =>
-  window.scrollTo(0, ref.current.offsetTop - 63);
-const scrollToRefNav = (ref) => window.scrollTo(0, ref.current.offsetTop - 63);
+  window.scrollTo(0, ref.current.offsetTop - 70);
+const scrollToRefNav = (ref) => window.scrollTo(0, ref.current.offsetTop - 70);
 // General scroll to element function
 
 function App() {
