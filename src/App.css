@@ -493,8 +493,8 @@ Projects
 .projects-title {
   font-family: var(--TitleFont);
   color: var(--MainGray);
-  font-size: 2.5rem;
-  letter-spacing: 2.5px;
+  font-size: 2rem;
+  letter-spacing: 2.2px;
 }
 .single-projects-container {
   display: flex;
@@ -504,14 +504,13 @@ Projects
 }
 .single-project-container {
   width: 20rem;
-  height: 13rem;
+  height: 18rem;
   text-align: center;
   position: relative;
   margin: 1.2rem auto;
   box-shadow: 1px 1px 5px rgba(5, 5, 5, 0.583);
   background: rgba(255, 255, 255, 0.761);
   overflow: hidden;
-  /* border: 1px solid var(--MainColor); */
 }
 .single-project-container img {
   width: 100%;
@@ -534,15 +533,15 @@ Projects
 .project-text-container h3 {
   color: black;
   margin-bottom: 0.2rem;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-family: var(--TitleFont);
-  letter-spacing: 1.3px;
+  letter-spacing: 1px;
 }
 .project-text-container p {
   color: var(--MainColor);
   font-family: var(--SecondaryFont);
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   letter-spacing: 2px;
 }
 .project-icons-container {
@@ -551,6 +550,8 @@ Projects
   align-items: center;
   font-size: 2rem;
   transition: var(--transition);
+  text-align: center;
+  margin: 0 auto;
 }
 .project-icons-container > * {
   color: var(--MainGray);
@@ -570,7 +571,7 @@ Projects
 
 @media screen and (min-width: 780px) {
   .projects-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .single-projects-container {
     display: grid;

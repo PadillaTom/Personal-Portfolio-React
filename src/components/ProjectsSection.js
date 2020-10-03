@@ -4,6 +4,7 @@ import AirTribute from '../images/AirTribute.jpg';
 import FlixTribute from '../images/FlixTribute.jpg';
 import TvSuisse from '../images/TvSuisse.jpg';
 import PeruvianChef from '../images/PeruvianChef.jpg';
+import Nyus from '../images/Nyus.jpg';
 // Icons
 import { FiGithub } from 'react-icons/fi';
 import { HiOutlineExternalLink } from 'react-icons/hi';
@@ -80,7 +81,7 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
               <div className='project-info-container'>
                 <div className='project-text-container'>
                   <h3>Air Tribute</h3>
-                  <p>React Js / React Router Dom</p>
+                  <p>React Js / React Router Dom / Axios</p>
                 </div>
                 <div className='project-icons-container'>
                   <a href='https://bnb-tribute-react.netlify.app'>
@@ -89,6 +90,25 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
                   <a href='https://github.com/PadillaTom/Air-Tribute'>
                     <FiGithub></FiGithub>
                   </a>
+                </div>
+              </div>
+            </div>
+            {/* End Single Project */}
+            {/* Single Project */}
+            <div className='single-project-container'>
+              <img src={Nyus} alt='Project-Img' />
+              <div className='project-info-container'>
+                <div className='project-text-container'>
+                  <h3>Nyu's Mixologie</h3>
+                  <p>React Js / React Router Dom / Context API / Firebase </p>
+                </div>
+                <div className='project-icons-container'>
+                  <a href='https://nyus.netlify.app/'>
+                    <HiOutlineExternalLink></HiOutlineExternalLink>
+                  </a>
+                  {/* <a href='https://github.com/PadillaTom/Air-Tribute'>
+                    <FiGithub></FiGithub>
+                  </a> */}
                 </div>
               </div>
             </div>
