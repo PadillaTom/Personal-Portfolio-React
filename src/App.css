@@ -10,15 +10,11 @@ Variables
 ===============
 */
 :root {
-  /* 
-  
-
   /* Colors */
-  --MainColor: #da1900;
+  --MainColor: rgb(199, 23, 0);
   --BgColor: #fafafa;
   --MainGray: #1b1b1c;
   --CtaColor: #ff101f;
-
   /* grey used for paragraphs */
   --clr-white: #fff;
   --MainFont: 'Piazzolla', serif;
@@ -31,7 +27,6 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
 }
-
 /*
 =============== 
 Global Styles
@@ -673,6 +668,34 @@ Contact
   margin-bottom: 3px;
   border-radius: 0.4rem;
 }
+.contact-form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.631);
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
+.contact-form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.631);
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
+.contact-form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.631);
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
+.contact-form input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.631);
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
 .contact-form input::placeholder {
   color: rgba(255, 255, 255, 0.631);
   letter-spacing: 1px;
@@ -689,6 +712,34 @@ Contact
   border-top-right-radius: 0.4rem;
   resize: none;
   padding-top: 0.5rem;
+}
+.contact-form textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.631);
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
+.contact-form textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.631);
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
+.contact-form textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.631);
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
+.contact-form textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.631);
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
 }
 .contact-form textarea::placeholder {
   color: rgba(255, 255, 255, 0.631);
