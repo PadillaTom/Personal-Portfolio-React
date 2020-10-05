@@ -480,10 +480,10 @@ Projects
   width: 100vw;
   margin: 0 auto;
   background: linear-gradient(rgb(0, 3, 12), rgba(255, 255, 255, 0.597));
-  /* url('./images/fondo1.png') center/cover fixed no-repeat; */
 }
 .projects-container {
   width: 96vw;
+  max-width: 1450px;
   margin: 0 auto;
   padding-bottom: 3rem;
 }
@@ -596,6 +596,11 @@ Projects
 @media screen and (min-width: 992px) {
   .new-single {
     height: 35rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .new-single {
+    height: 40rem;
   }
 }
 /*
