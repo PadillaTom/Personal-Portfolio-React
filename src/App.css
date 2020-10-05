@@ -14,8 +14,8 @@ Variables
   
 
   /* Colors */
-  --MainColor: #800f00;
-  --BgColor: #e8e8e8;
+  --MainColor: #da1900;
+  --BgColor: #fafafa;
   --MainGray: #1b1b1c;
   --CtaColor: #ff101f;
 
@@ -281,7 +281,7 @@ Hero Section
 .hero-container {
   position: relative;
   height: 85vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('./images/vector1.jpg') center/cover fixed no-repeat;
 }
 .hero-info-container {
@@ -604,8 +604,8 @@ Contact
 .contact-section {
   width: 100vw;
   margin: 0 auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url('./images/fondo2.jpg') center/cover fixed no-repeat;
+  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), */
+  background: url('./images/fondo2.jpg') center/cover fixed no-repeat;
 }
 .contact-section-container {
   width: 90vw;
@@ -620,10 +620,10 @@ Contact
   font-family: var(--TitleFont);
   font-size: 2.5rem;
   letter-spacing: 2.5px;
-  color: white;
+  color: rgb(43, 43, 43);
 }
 .contact-subtitle {
-  color: #cccccc;
+  color: #414141;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   font-size: 0.8rem;
@@ -645,12 +645,12 @@ Contact
   padding-top: 0.5rem;
   font-family: var(--SecondaryFont);
   font-size: 1.2rem;
-  font-weight: 300;
-  color: white;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
 }
 .contact-written-icon {
-  color: white;
+  color: rgb(61, 61, 61);
   font-size: 1.5rem;
 }
 .contact-methods-container {
@@ -763,8 +763,11 @@ Contact
     font-weight: 300;
   }
   .contact-social-media-desktop-container {
-    color: var(--MainColor);
+    color: var(--MainGray);
     font-size: 2.25rem;
+  }
+  .contact-social-media-desktop-container > a:hover {
+    color: var(--MainColor);
   }
   .contact-social-media-desktop-container a {
     margin-right: 2rem;
