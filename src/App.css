@@ -279,6 +279,11 @@ Hero Section
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('./images/vector1.jpg') center/cover fixed no-repeat;
 }
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .hero-container {
+    background-attachment: scroll;
+  }
+}
 .hero-info-container {
   width: 85%;
   position: absolute;
