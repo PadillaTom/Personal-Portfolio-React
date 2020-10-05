@@ -11,16 +11,11 @@ Variables
 */
 :root {
   /* 
-    :::::Color Palette:::::::
-    Main: #6E9887
-    CTA: #FF101F
-    Bg: #fafafa
-    Grey: #393E41
-    */
+  
 
   /* Colors */
-  --MainColor: #ff7b00;
-  --BgColor: #f8f8f8;
+  --MainColor: #800f00;
+  --BgColor: #e8e8e8;
   --MainGray: #262829;
   --CtaColor: #ff101f;
 
@@ -165,12 +160,12 @@ Navbar / Sidebar
 
 .menu-sidebar-open-btn {
   margin-right: 1rem;
-  font-size: 2.25rem;
-  color: var(--CtaColor);
+  font-size: 2rem;
+  color: var(--MainColor);
   transition: var(--transition);
   cursor: pointer;
   position: fixed;
-  right: 1rem;
+  right: 0;
   top: 1rem;
   z-index: 2;
 }
@@ -285,9 +280,9 @@ Hero Section
 */
 .hero-container {
   position: relative;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('./images/fondo1.png') center/cover fixed no-repeat;
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./images/vector1.jpg') center/cover fixed no-repeat;
 }
 .hero-info-container {
   width: 85%;
@@ -299,9 +294,9 @@ Hero Section
   text-align: center;
 }
 .hero-info-container h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 1.2px;
-  font-weight: 100;
+  font-weight: 400;
   font-family: var(--SecondaryFont);
 }
 .hero-btn {
@@ -313,7 +308,7 @@ Hero Section
   font-size: 0.8rem;
   font-family: var(--SecondaryFont);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
   border: 1.7px solid var(--MainColor);
   letter-spacing: 2px;
@@ -323,8 +318,8 @@ Hero Section
   background-color: transparent;
 }
 .hero-btn:hover {
-  background-color: rgba(255, 255, 255, 0.268);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.666);
+  color: var(--MainColor);
 }
 .hero-btn-desktop {
   display: none;
@@ -482,26 +477,75 @@ Projects
 .projects-section {
   width: 100vw;
   margin: 0 auto;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(102, 16, 16, 0.2)), */
-  background: url('./images/triangles3d.png') center/cover fixed no-repeat;
+  background: linear-gradient(rgb(0, 3, 12), rgba(255, 255, 255, 0.597));
+  /* url('./images/fondo1.png') center/cover fixed no-repeat; */
 }
 .projects-container {
-  width: 90vw;
+  width: 96vw;
   margin: 0 auto;
   padding-bottom: 3rem;
 }
 .projects-title {
   font-family: var(--TitleFont);
-  color: var(--MainGray);
+  color: white;
   font-size: 2rem;
   letter-spacing: 2.2px;
 }
 .single-projects-container {
+  width: 98%;
+  margin: 0 auto;
+  background-color: var(--BgColor);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+/* NEW SINGLE PROJECT */
+.new-single {
+  text-align: center;
+  border-bottom: 2px solid #2628297e;
+}
+.new-single-title {
+  color: var(--MainGray);
+  padding-top: 1rem;
+}
+.new-single-title h2 {
+  font-family: var(--TitleFont);
+}
+.new-single img {
+  width: 95%;
+  transition: var(--transition);
+  margin: 1rem auto;
+}
+.new-single img:hover {
+  transform: scale(1.1);
+}
+.new-single-info {
+  width: 70%;
+  margin: 0 auto;
+}
+.new-single-info h4 {
+  color: var(--MainColor);
+}
+.new-single-info p {
+  color: #262829ce;
+}
+.new-single-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.new-single-icons a {
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+.new-single-icons a:hover {
+  color: var(--MainColor);
+  transform: translateY(-15%);
+}
+
+/* END NEW SINGLE PROJECT */
 .single-project-container {
   width: 20rem;
   height: 18rem;

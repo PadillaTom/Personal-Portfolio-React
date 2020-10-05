@@ -19,14 +19,17 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
           </div>
           <div className='single-projects-container'>
             {/* Single Project */}
-            <div className='single-project-container'>
+            <article className='new-single'>
+              <div className='new-single-title'>
+                <h2>Peruvian Chef</h2>
+              </div>
               <img src={PeruvianChef} alt='peruvian-chef' />
-              <div className='project-info-container'>
-                <div className='project-text-container'>
-                  <h3>Peruvian Chef</h3>
-                  <p>HTML / CSS / JS</p>
-                </div>
-                <div className='project-icons-container'>
+              <div className='new-single-info'>
+                <h4>HTML / CSS / JS</h4>
+                <p>
+                  Static website applying Flexbox and Grids. 100% Responsive.
+                </p>
+                <div className='new-single-icons'>
                   <a href='https://port-peruchef.netlify.app'>
                     <HiOutlineExternalLink></HiOutlineExternalLink>
                   </a>
@@ -35,17 +38,21 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </article>
             {/* End Single Project */}
             {/* Single Project */}
-            <div className='single-project-container'>
-              <img src={TvSuisse} alt='tv-suisse' />
-              <div className='project-info-container'>
-                <div className='project-text-container'>
-                  <h3>Tv Suisse</h3>
-                  <p>HTML / CSS / JS</p>
-                </div>
-                <div className='project-icons-container'>
+            <article className='new-single'>
+              <div className='new-single-title'>
+                <h2>RTS Tribute</h2>
+              </div>
+              <img src={TvSuisse} alt='RTS' />
+              <div className='new-single-info'>
+                <h4>HTML / CSS / JS</h4>
+                <p>
+                  Static website applying Flexbox and Grids. Tribute to the
+                  Swiss Radio and Television. 100% Responsive
+                </p>
+                <div className='new-single-icons'>
                   <a href='https://rts-project-clone.netlify.app'>
                     <HiOutlineExternalLink></HiOutlineExternalLink>
                   </a>
@@ -54,17 +61,41 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </article>
             {/* End Single Project */}
             {/* Single Project */}
-            <div className='single-project-container'>
-              <img src={FlixTribute} alt='Project-Img' />
-              <div className='project-info-container'>
-                <div className='project-text-container'>
-                  <h3>Flix Tribute</h3>
-                  <p>React Js / TMDB API</p>
+            <article className='new-single'>
+              <div className='new-single-title'>
+                <h2>Nyu's Mixology</h2>
+              </div>
+              <img src={Nyus} alt='Nyus' />
+              <div className='new-single-info'>
+                <h4>React Js / React Router Dom / Context API / Firebase</h4>
+                <p>
+                  Website made for a Bartender's Company. Fully responsive.
+                  Requesting Data stored in Firebase.
+                </p>
+                <div className='new-single-icons'>
+                  <a href='https://nyus.netlify.app/'>
+                    <HiOutlineExternalLink></HiOutlineExternalLink>
+                  </a>
                 </div>
-                <div className='project-icons-container'>
+              </div>
+            </article>
+            {/* End Single Project */}
+            {/* Single Project */}
+            <article className='new-single'>
+              <div className='new-single-title'>
+                <h2>Flix Tribute</h2>
+              </div>
+              <img src={FlixTribute} alt='Flix Tribute' />
+              <div className='new-single-info'>
+                <h4>React / TMDB Api / Axios / React MovieTrailer</h4>
+                <p>
+                  Responsive Website requesting to The Movie Database API.
+                  Accessing data and displaying as needed.
+                </p>
+                <div className='new-single-icons'>
                   <a href='https://flix-tribute-react.netlify.app'>
                     <HiOutlineExternalLink></HiOutlineExternalLink>
                   </a>
@@ -73,17 +104,21 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </article>
             {/* End Single Project */}
             {/* Single Project */}
-            <div className='single-project-container'>
-              <img src={AirTribute} alt='Project-Img' />
-              <div className='project-info-container'>
-                <div className='project-text-container'>
-                  <h3>Air Tribute</h3>
-                  <p>React Js / React Router Dom / Axios</p>
-                </div>
-                <div className='project-icons-container'>
+            <article className='new-single'>
+              <div className='new-single-title'>
+                <h2>Air Tribute</h2>
+              </div>
+              <img src={AirTribute} alt='Air Tribute' />
+              <div className='new-single-info'>
+                <h4>
+                  React Js / React Router Dom / Axios / Material UI / React
+                  DateRange
+                </h4>
+                <p>Tribute to a well known company, fully Responsive.</p>
+                <div className='new-single-icons'>
                   <a href='https://bnb-tribute-react.netlify.app'>
                     <HiOutlineExternalLink></HiOutlineExternalLink>
                   </a>
@@ -92,26 +127,7 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
                   </a>
                 </div>
               </div>
-            </div>
-            {/* End Single Project */}
-            {/* Single Project */}
-            <div className='single-project-container'>
-              <img src={Nyus} alt='Project-Img' />
-              <div className='project-info-container'>
-                <div className='project-text-container'>
-                  <h3>Nyu's Mixologie</h3>
-                  <p>React Js / React Router Dom / Context API / Firebase </p>
-                </div>
-                <div className='project-icons-container'>
-                  <a href='https://nyus.netlify.app/'>
-                    <HiOutlineExternalLink></HiOutlineExternalLink>
-                  </a>
-                  {/* <a href='https://github.com/PadillaTom/Air-Tribute'>
-                    <FiGithub></FiGithub>
-                  </a> */}
-                </div>
-              </div>
-            </div>
+            </article>
             {/* End Single Project */}
           </div>
         </div>

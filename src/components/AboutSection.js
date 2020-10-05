@@ -1,5 +1,4 @@
 import React from 'react';
-import sculpt1 from '../images/sculpt1.png';
 
 const AboutSection = ({
   executeScrollProj,
@@ -12,9 +11,6 @@ const AboutSection = ({
     <React.Fragment>
       <section className='about-section' id='about' ref={aboutRef}>
         <div className='about-container'>
-          <div className='about-img-container'>
-            <img src={sculpt1} alt='About-img' />
-          </div>
           <div className='about-title-container'>
             <h3 className='about-title'>About Me</h3>
           </div>
@@ -44,7 +40,6 @@ const AboutSection = ({
               className='about-btn-desktop'
               onClick={executeScrollContDesktop}
             >
-              {' '}
               Let's get in touch
             </button>
           </div>
