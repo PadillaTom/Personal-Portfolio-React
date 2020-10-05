@@ -277,11 +277,13 @@ Hero Section
   position: relative;
   height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./images/vector1.jpg') center/cover fixed no-repeat;
+    url('./images/vector1at640.jpg') center/cover fixed no-repeat;
 }
-@media only screen and (max-width: 375px) {
+@media screen and (min-width: 550px) {
   .hero-container {
-    background-attachment: scroll;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('./images/vector1.jpg') center/cover fixed no-repeat;
   }
 }
 .hero-info-container {
