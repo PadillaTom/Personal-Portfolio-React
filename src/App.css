@@ -16,7 +16,7 @@ Variables
   /* Colors */
   --MainColor: #800f00;
   --BgColor: #e8e8e8;
-  --MainGray: #262829;
+  --MainGray: #1b1b1c;
   --CtaColor: #ff101f;
 
   /* grey used for paragraphs */
@@ -494,7 +494,7 @@ Projects
 .single-projects-container {
   width: 98%;
   margin: 0 auto;
-  background-color: var(--BgColor);
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -504,18 +504,22 @@ Projects
 .new-single {
   text-align: center;
   border-bottom: 2px solid #2628297e;
+  display: grid;
+  align-items: center;
+  height: 30rem;
 }
 .new-single-title {
   color: var(--MainGray);
-  padding-top: 1rem;
+  align-self: center;
 }
 .new-single-title h2 {
   font-family: var(--TitleFont);
+  margin-bottom: 0;
 }
 .new-single img {
   width: 95%;
   transition: var(--transition);
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 .new-single img:hover {
   transform: scale(1.1);
@@ -538,105 +542,58 @@ Projects
 }
 .new-single-icons a {
   font-size: 1.5rem;
+  padding-bottom: 0.5rem;
   transition: var(--transition);
 }
 .new-single-icons a:hover {
   color: var(--MainColor);
   transform: translateY(-15%);
 }
-
 /* END NEW SINGLE PROJECT */
-.single-project-container {
-  width: 20rem;
-  height: 18rem;
-  text-align: center;
-  position: relative;
-  margin: 1.2rem auto;
-  box-shadow: 1px 1px 5px rgba(5, 5, 5, 0.583);
-  background: rgba(255, 255, 255, 0.761);
-  overflow: hidden;
+@media screen and (min-width: 550px) {
+  .new-single {
+    height: 30rem;
+  }
+  .new-single img:hover {
+    transform: scale(1.02);
+  }
+  .new-single-title h2 {
+    margin-bottom: 0.7rem;
+  }
 }
-.single-project-container img {
-  width: 100%;
-  min-height: 100%;
-  transition: var(--transition);
-  display: block;
-  object-fit: cover;
+@media screen and (min-width: 600px) {
+  .new-single {
+    height: 35rem;
+  }
 }
-.project-info-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: var(--transition);
-  opacity: 0;
+@media screen and (min-width: 700px) {
 }
-.project-text-container {
-  margin-bottom: 5rem;
-}
-.project-text-container h3 {
-  color: black;
-  margin-bottom: 0.2rem;
-  font-size: 1.3rem;
-  font-family: var(--TitleFont);
-  letter-spacing: 1px;
-}
-.project-text-container p {
-  color: var(--MainColor);
-  font-family: var(--SecondaryFont);
-  font-weight: bold;
-  font-size: 0.6rem;
-  letter-spacing: 2px;
-}
-.project-icons-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 2rem;
-  transition: var(--transition);
-  text-align: center;
-  margin: 0 auto;
-}
-.project-icons-container > * {
-  color: var(--MainGray);
-  cursor: pointer;
-}
-.project-icons-container > *:hover {
-  color: var(--MainColor);
-}
-.single-project-container:hover img {
-  opacity: 0;
-  transform: scale(1.1);
-}
-.single-project-container:hover .project-info-container,
-.single-project-container:hover .project-icons-container {
-  opacity: 1;
-}
-
-@media screen and (min-width: 780px) {
-  .projects-title {
+@media screen and (min-width: 760px) {
+  .new-single-title h2 {
     font-size: 2rem;
+  }
+  .new-single img:hover {
+    transform: scale(1.05);
   }
   .single-projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 4rem 0rem;
   }
-  .single-project-container {
-    width: 100%;
-    height: 100%;
+  .new-single {
+    gap: 1rem;
+  }
+  .new-single-info {
+    width: 80%;
+  }
+  .new-single img {
+    width: 90%;
   }
 }
 @media screen and (min-width: 992px) {
-  .project-text-container h3 {
-    font-size: 2.5rem;
-  }
-  .project-text-container p {
-    font-size: 1rem;
-  }
-  .project-icons-container {
-    font-size: 3rem;
+  .new-single {
+    height: 35rem;
   }
 }
 /*
@@ -647,7 +604,8 @@ Contact
 .contact-section {
   width: 100vw;
   margin: 0 auto;
-  background: url('./images/fondo2.jpg') center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url('./images/fondo2.jpg') center/cover fixed no-repeat;
 }
 .contact-section-container {
   width: 90vw;
@@ -662,9 +620,10 @@ Contact
   font-family: var(--TitleFont);
   font-size: 2.5rem;
   letter-spacing: 2.5px;
+  color: white;
 }
 .contact-subtitle {
-  color: #040404;
+  color: #cccccc;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   font-size: 0.8rem;
@@ -684,13 +643,14 @@ Contact
 }
 .contact-written-info p {
   padding-top: 0.5rem;
-  font-family: var(--MainFont);
+  font-family: var(--SecondaryFont);
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 300;
+  color: white;
   letter-spacing: 1px;
 }
 .contact-written-icon {
-  color: var(--MainColor);
+  color: white;
   font-size: 1.5rem;
 }
 .contact-methods-container {
@@ -800,7 +760,7 @@ Contact
     align-items: center;
   }
   .contact-written-info p {
-    font-weight: bold;
+    font-weight: 300;
   }
   .contact-social-media-desktop-container {
     color: var(--MainColor);
