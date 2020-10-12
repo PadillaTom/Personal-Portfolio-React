@@ -5,6 +5,7 @@ import FlixTribute from '../images/FlixTribute.jpg';
 import TvSuisse from '../images/TvSuisse.jpg';
 import PeruvianChef from '../images/PeruvianChef.jpg';
 import Nyus from '../images/Nyus.jpg';
+import Buona from "../images/BuonaPizza.jpg"
 // Icons
 import { FiGithub } from 'react-icons/fi';
 import { HiOutlineExternalLink } from 'react-icons/hi';
@@ -66,11 +67,33 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
             {/* Single Project */}
             <article className='new-single'>
               <div className='new-single-title'>
+                <h2>Buona Pizza</h2>
+              </div>
+              <img src={Buona} alt='Buona' />
+              <div className='new-single-info'>
+                <h4>React Js / Context API / Firebase </h4>
+                <p>
+                  Fantasy Pizzeria website allowing users to Login / Logout and Add items to the Cart.
+                </p>
+                <div className='new-single-icons'>
+                  <a href='https://buona-zapi.netlify.app/'>
+                    <HiOutlineExternalLink></HiOutlineExternalLink>
+                  </a>
+                   <a href='https://github.com/PadillaTom/Buona-Pizza'>
+                    <FiGithub></FiGithub>
+                  </a>
+                </div>
+              </div>
+            </article>
+            {/* End Single Project */}
+            {/* Single Project */}
+            <article className='new-single'>
+              <div className='new-single-title'>
                 <h2>Nyu's Mixology</h2>
               </div>
               <img src={Nyus} alt='Nyus' />
               <div className='new-single-info'>
-                <h4>React Js / React Router Dom / Context API / Firebase</h4>
+                <h4>React Js / Context API / Firebase</h4>
                 <p>
                   Website made for a Bartender's Company. Fully responsive.
                   Requesting Data stored in Firebase.
