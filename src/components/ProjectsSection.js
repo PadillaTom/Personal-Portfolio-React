@@ -5,7 +5,8 @@ import FlixTribute from '../images/FlixTribute.jpg';
 import TvSuisse from '../images/TvSuisse.jpg';
 import PeruvianChef from '../images/PeruvianChef.jpg';
 import Nyus from '../images/Nyus.jpg';
-import Buona from "../images/BuonaPizza.jpg"
+import Buona from '../images/BuonaPizza.jpg';
+import Music from '../images/MusicStore.jpg';
 // Icons
 import { FiGithub } from 'react-icons/fi';
 import { HiOutlineExternalLink } from 'react-icons/hi';
@@ -67,19 +68,43 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
             {/* Single Project */}
             <article className='new-single'>
               <div className='new-single-title'>
-                <h2>Buona Pizza</h2>
+                <h2>Music Store</h2>
               </div>
-              <img src={Buona} alt='Buona' />
+              <img src={Music} alt='MusicStore' />
               <div className='new-single-info'>
                 <h4>React Js / Context API / Firebase </h4>
                 <p>
-                  Fantasy Pizzeria website allowing users to Login / Logout and Add items to the Cart.
+                  Online Music Store website, 100% responsive, with user
+                  Authentication and Shopping Cart.
+                </p>
+                <div className='new-single-icons'>
+                  <a href='https://music-store-geneva.netlify.app/'>
+                    <HiOutlineExternalLink></HiOutlineExternalLink>
+                  </a>
+                  <a href='https://github.com/PadillaTom/MusicStore'>
+                    <FiGithub></FiGithub>
+                  </a>
+                </div>
+              </div>
+            </article>
+            {/* End Single Project */}
+            {/* Single Project */}
+            <article className='new-single'>
+              <div className='new-single-title'>
+                <h2>Buona Pizza</h2>
+              </div>
+              <img src={Buona} alt='BuonaPizza' />
+              <div className='new-single-info'>
+                <h4>React Js / Context API / Firebase </h4>
+                <p>
+                  Fantasy Pizzeria website allowing users to Login / Logout and
+                  Add items to the Cart.
                 </p>
                 <div className='new-single-icons'>
                   <a href='https://buona-zapi.netlify.app/'>
                     <HiOutlineExternalLink></HiOutlineExternalLink>
                   </a>
-                   <a href='https://github.com/PadillaTom/Buona-Pizza'>
+                  <a href='https://github.com/PadillaTom/Buona-Pizza'>
                     <FiGithub></FiGithub>
                   </a>
                 </div>
