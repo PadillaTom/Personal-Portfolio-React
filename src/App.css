@@ -177,6 +177,8 @@ Navbar / Sidebar
   .navbar {
     background: rgba(0, 0, 0, 0.618);
     position: fixed;
+    top: 0;
+    left: 0;
   }
   .navbar-logo {
     display: block;
@@ -276,14 +278,12 @@ Hero Section
 .hero-container {
   position: relative;
   height: 85vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('./images/vector1at640.jpg') center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url('./images/vector1.jpg') center/cover fixed no-repeat;
 }
 @media screen and (min-width: 550px) {
   .hero-container {
     height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('./images/vector1.jpg') center/cover fixed no-repeat;
   }
 }
 .hero-info-container {

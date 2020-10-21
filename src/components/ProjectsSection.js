@@ -1,11 +1,11 @@
 import React from 'react';
 // Project Images
-import AirTribute from '../images/AirTribute.jpg';
+
 import FlixTribute from '../images/FlixTribute.jpg';
 import TvSuisse from '../images/TvSuisse.jpg';
 import PeruvianChef from '../images/PeruvianChef.jpg';
 import Nyus from '../images/Nyus.jpg';
-import Buona from '../images/BuonaPizza.jpg';
+
 import Music from '../images/MusicStore.jpg';
 // Icons
 import { FiGithub } from 'react-icons/fi';
@@ -91,29 +91,6 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
             {/* Single Project */}
             <article className='new-single'>
               <div className='new-single-title'>
-                <h2>Buona Pizza</h2>
-              </div>
-              <img src={Buona} alt='BuonaPizza' />
-              <div className='new-single-info'>
-                <h4>React Js / Context API / Firebase </h4>
-                <p>
-                  Fantasy Pizzeria website allowing users to Login / Logout and
-                  Add items to the Cart.
-                </p>
-                <div className='new-single-icons'>
-                  <a href='https://buona-zapi.netlify.app/'>
-                    <HiOutlineExternalLink></HiOutlineExternalLink>
-                  </a>
-                  <a href='https://github.com/PadillaTom/Buona-Pizza'>
-                    <FiGithub></FiGithub>
-                  </a>
-                </div>
-              </div>
-            </article>
-            {/* End Single Project */}
-            {/* Single Project */}
-            <article className='new-single'>
-              <div className='new-single-title'>
                 <h2>Nyu's Mixology</h2>
               </div>
               <img src={Nyus} alt='Nyus' />
@@ -138,7 +115,7 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
               </div>
               <img src={FlixTribute} alt='Flix Tribute' />
               <div className='new-single-info'>
-                <h4>React / TMDB Api / Axios / React MovieTrailer</h4>
+                <h4>React / TMDB Api / React MovieTrailer</h4>
                 <p>
                   Responsive Website requesting to The Movie Database API.
                   Accessing data and displaying as needed.
@@ -148,29 +125,6 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
                     <HiOutlineExternalLink></HiOutlineExternalLink>
                   </a>
                   <a href='https://github.com/PadillaTom/FlixTribute'>
-                    <FiGithub></FiGithub>
-                  </a>
-                </div>
-              </div>
-            </article>
-            {/* End Single Project */}
-            {/* Single Project */}
-            <article className='new-single'>
-              <div className='new-single-title'>
-                <h2>Air Tribute</h2>
-              </div>
-              <img src={AirTribute} alt='Air Tribute' />
-              <div className='new-single-info'>
-                <h4>
-                  React Js / React Router Dom / Axios / Material UI / React
-                  DateRange
-                </h4>
-                <p>Tribute to a well known company, fully Responsive.</p>
-                <div className='new-single-icons'>
-                  <a href='https://bnb-tribute-react.netlify.app'>
-                    <HiOutlineExternalLink></HiOutlineExternalLink>
-                  </a>
-                  <a href='https://github.com/PadillaTom/Air-Tribute'>
                     <FiGithub></FiGithub>
                   </a>
                 </div>

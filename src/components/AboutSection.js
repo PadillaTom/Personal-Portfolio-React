@@ -18,6 +18,13 @@ const AboutSection = ({
             <p>
               With an artistic background, I have started my studies as a Web
               Developer to find a real passion.
+              <br />
+              <span className='span-about'>Tools & Technologies: </span>HTML,
+              CSS, Javascript, React, Gatsby, NPM, Git, Firebase, Material UI.
+              <br />
+              <span className='span-about'>How will I move on?</span>
+              <br />
+              NextJS, React Native, NodeJS, Express, MongoDB
             </p>
             <br></br>
             <div className='about-info-projects-invite'>
