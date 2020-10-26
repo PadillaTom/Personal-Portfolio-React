@@ -19,24 +19,32 @@ const AboutSection = ({
               With an artistic background, I have started my studies as a Web
               Developer to find a real passion.
               <br />
-              <span className='span-about'>Tools & Technologies: </span>HTML,
-              CSS, Javascript, React, Gatsby, NPM, Git, Firebase, Material UI.
+              <span className='span-about-nolink'>Tools & Technologies </span>
               <br />
-              <span className='span-about'>How will I move on?</span>
+              HTML, CSS, Javascript, React, Gatsby, NPM, Git, Firebase, Material
+              UI.
               <br />
-              NextJS, React Native, NodeJS, Express, MongoDB
+              <span className='span-about-nolink'>How will I move on?</span>
+              <br />
+              PHP - mySQL - MongoDB
             </p>
             <br></br>
             <div className='about-info-projects-invite'>
               <p>
                 I invite you to see my
-                <span onClick={executeScrollProj}> Projects</span>.
+                <span onClick={executeScrollProj} className='span-about'>
+                  Projects
+                </span>
+                .
               </p>
             </div>
             <div className='about-info-projects-invite-desktop'>
               <p>
                 I invite you to see my
-                <span onClick={executeScrollProjDesktop}> Projects</span>.
+                <span onClick={executeScrollProjDesktop} className='span-about'>
+                  Projects
+                </span>
+                .
               </p>
             </div>
 

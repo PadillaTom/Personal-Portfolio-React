@@ -5,6 +5,7 @@ import FlixTribute from '../images/FlixTribute.jpg';
 import TvSuisse from '../images/TvSuisse.jpg';
 import PeruvianChef from '../images/PeruvianChef.jpg';
 import Nyus from '../images/Nyus.jpg';
+import Nasa from '../images/NasaAPI.jpg';
 
 import Music from '../images/MusicStore.jpg';
 // Icons
@@ -103,6 +104,29 @@ const ProjectsSection = ({ projRef, projRefDesk }) => {
                 <div className='new-single-icons'>
                   <a href='https://nyus.netlify.app/'>
                     <HiOutlineExternalLink></HiOutlineExternalLink>
+                  </a>
+                </div>
+              </div>
+            </article>
+            {/* End Single Project */}
+            {/* Single Project */}
+            <article className='new-single'>
+              <div className='new-single-title'>
+                <h2>NASA API</h2>
+              </div>
+              <img src={Nasa} alt='Nasa API' />
+              <div className='new-single-info'>
+                <h4>React / Nasa API </h4>
+                <p>
+                  Website using the Nasa API to fetch APOD and MARS Rover
+                  Photos.
+                </p>
+                <div className='new-single-icons'>
+                  <a href='https://nasa-fun-api.netlify.app/'>
+                    <HiOutlineExternalLink></HiOutlineExternalLink>
+                  </a>
+                  <a href='https://github.com/PadillaTom/Nasa-Fun-React'>
+                    <FiGithub></FiGithub>
                   </a>
                 </div>
               </div>
